@@ -36,8 +36,8 @@ RUN cd $DIRPATH && \
         ipython pandas jsonschema coverage python-coveralls boto3 \
         doctest-ignore-unicode sqlalchemy psycopg2-binary reportlab \
         docstring-parser pyjnius==1.1.4 python-libsbml bottle gunicorn \
-        openpyxl flask<2.0 flask_restx<0.4 flask_cors obonet \
-        jinja2 ndex2==2.0.1 requests stemming nltk<3.6 unidecode future pykqml \
+        openpyxl flask==1.1.4 flask_restx==0.3.0 flask_cors obonet \
+        jinja2 ndex2==2.0.1 requests stemming nltk==3.5 unidecode future pykqml \
         paths-graph protmapper gilda adeft kappy==4.0.94 pybel==0.15.4 pysb==1.9.1 \
         objectpath rdflib==4.2.2 pygraphviz pybiopax tqdm scikit-learn && \
     pip uninstall -y enum34 && \
