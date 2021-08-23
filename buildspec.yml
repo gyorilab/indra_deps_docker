@@ -3,13 +3,14 @@ version: 0.1
 phases:
   pre_build:
     commands:
-      - echo Getting sparser core
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION)
+      - echo Getting Sparser
       - aws s3 cp s3://bigmech/sparser_core/save-semantics.sh .
       - aws s3 cp s3://bigmech/sparser_core/r3.core .
       - aws s3 cp s3://bigmech/sparser_core/version.txt .
-      - aws s3 cp s3://bigmech/reach-1.6.1-SNAPSHOT-FAT.jar .
+      - echo Getting Reach
+      - aws s3 cp s3://bigmech/reach-1.6.3-9ed6fe.jar .
   build:
     commands:
       - echo Build started on `date`
