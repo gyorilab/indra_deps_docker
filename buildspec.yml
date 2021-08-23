@@ -11,6 +11,7 @@ phases:
       - aws s3 cp s3://bigmech/sparser_core/version.txt .
       - echo Getting Reach
       - aws s3 cp s3://bigmech/reach-1.6.3-9ed6fe.jar .
+      - aws s3 cp s3://bigmech/travis/mti_jars_v2.zip ./mti_jars.zip
   build:
     commands:
       - docker login -u "${DOCKERHUB_USER}" -p "${DOCKERHUB_PWD}"
