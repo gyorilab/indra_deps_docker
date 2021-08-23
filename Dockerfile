@@ -32,7 +32,7 @@ RUN cd $DIRPATH && \
     pip install cython && \
     # Now install other Python packages via pip
     pip install \
-        qt numpy scipy sympy==1.3 cython nose lxml matplotlib networkx \
+        numpy scipy sympy==1.3 cython nose lxml matplotlib networkx \
         ipython pandas jsonschema coverage python-coveralls boto3
         doctest-ignore-unicode sqlalchemy psycopg2-binary reportlab
         docstring-parser pyjnius==1.1.4 python-libsbml bottle gunicorn
