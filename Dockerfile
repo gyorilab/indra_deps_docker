@@ -33,9 +33,9 @@ RUN cd $DIRPATH && \
     # Now install other Python packages via pip
     pip install \
         numpy scipy sympy==1.3 cython nose lxml matplotlib networkx \
-        ipython pandas jsonschema coverage python-coveralls boto3
-        doctest-ignore-unicode sqlalchemy psycopg2-binary reportlab
-        docstring-parser pyjnius==1.1.4 python-libsbml bottle gunicorn
+        ipython pandas jsonschema coverage python-coveralls boto3 \
+        doctest-ignore-unicode sqlalchemy psycopg2-binary reportlab \
+        docstring-parser pyjnius==1.1.4 python-libsbml bottle gunicorn \
         openpyxl flask<2.0 flask_restx<0.4 flask_cors obonet \
         jinja2 ndex2==2.0.1 requests stemming nltk<3.6 unidecode future pykqml \
         paths-graph protmapper gilda adeft kappy==4.0.94 pybel==0.15.4 pysb==1.9.1 \
