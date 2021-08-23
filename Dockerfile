@@ -38,7 +38,7 @@ RUN cd $DIRPATH && \
         docstring-parser pyjnius==1.1.4 python-libsbml bottle gunicorn \
         openpyxl flask==1.1.4 flask_restx==0.3.0 flask_cors obonet \
         jinja2 ndex2==2.0.1 requests stemming nltk==3.5 unidecode future pykqml \
-        paths-graph protmapper gilda adeft kappy==4.0.94 pybel==0.15.4 pysb==1.9.1 \
+        paths-graph protmapper gilda adeft kappy==4.1.2 pybel==0.15.4 pysb==1.9.1 \
         objectpath rdflib==4.2.2 pygraphviz pybiopax tqdm scikit-learn && \
     pip uninstall -y enum34 && \
     # Download protmapper resources
