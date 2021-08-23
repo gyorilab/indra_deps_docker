@@ -20,16 +20,15 @@ ENV LC_ALL en_US.UTF-8  #
 # Set environment variables
 ENV DIRPATH /sw
 ENV BNGPATH=$DIRPATH/BioNetGen-2.4.0
-ENV PATH="$DIRPATH/miniconda/bin:$PATH"
 ENV KAPPAPATH=$DIRPATH/KaSim
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 WORKDIR $DIRPATH
 
-# Set up Miniconda and Python dependencies
+# Set up Python dependencies
 RUN cd $DIRPATH && \
-    # Install packages that are available via conda directly
     pip install --upgrade pip && \
+    # Install cython first for pyjnius
     pip install cython && \
     # Now install other Python packages via pip
     pip install \
