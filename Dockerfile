@@ -20,7 +20,6 @@ ENV LC_ALL en_US.UTF-8  #
 # Set environment variables
 ENV DIRPATH /sw
 ENV BNGPATH=$DIRPATH/BioNetGen-2.4.0
-ENV KAPPAPATH=$DIRPATH/KaSim
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 WORKDIR $DIRPATH
